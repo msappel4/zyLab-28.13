@@ -3,8 +3,17 @@ using namespace std;
 
 #include "ItemToPurchase.h"
 
-//constructor
-//ItemToPurchase (string itemName, int itemPrice, int itemQuantity);
+   ItemToPurchase::ItemToPurchase() {
+      itemName = "none";
+      itemPrice = 0;
+      itemQuantity = 0;
+   }
+
+   ItemToPurchase::ItemToPurchase(string itemName, int itemPrice, int itemQuantity){
+      this->itemName = itemName;
+      this->itemPrice = itemPrice;
+      this->itemQuantity = itemQuantity;
+   }
    void ItemToPurchase::SetName(string itemName){
       this->itemName = itemName;
    }
