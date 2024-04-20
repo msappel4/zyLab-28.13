@@ -6,19 +6,20 @@ using namespace std;
 
 class ItemToPurchase{
    
+   private:
+      string itemName;
+      int itemPrice;
+      int itemQuantity;
+    
    public:
-      ItemToPurchase (string itemName, int itemPrice, int itemQuantity);
+      ItemToPurchase();
+      ItemToPurchase(string itemName, int itemPrice, int itemQuantity);
       void SetName(string itemName);
       string GetName();
       void SetPrice(int itemPrice);
       int GetPrice();
       void SetQuantity(int itemQuantity);
       int GetQuantity();
-      
-   private:
-      string itemName;
-      int itemPrice;
-      int itemQuantity;
-      
+        
 };
 #endif
